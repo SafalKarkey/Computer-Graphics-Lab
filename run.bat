@@ -1,4 +1,8 @@
 @echo off
 pushd bin
-main.exe
+if exist main.exe (
+    main.exe
+) else (
+    echo Executable was not found
+)
 popd

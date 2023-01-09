@@ -23,17 +23,6 @@ x(k+1) = xk - 1/slope
 #include<stdio.h>
 #include<graphics.h>
 
-void paintwhite(){
-    for(int i = 0; i<800; i++){
-        for(int j = 0; j<600; j++){
-            putpixel(i, j, WHITE);
-        }
-    }
-    // for(int i = 0; i<800; i++){
-    //     line(i, 0, 600, i);
-    // }
-}
-
 void lineDDA(int x1, int y1, int x2, int y2){
     int dx = x2 - x1;
     int dy = y2 - y1;
@@ -66,11 +55,20 @@ int main(){
     initwindow(800, 600, "DDA");
     // paintwhite();
     
-    // lineDDA(0,0,400, 500);
-    // lineDDA(0,0,500, 400);
     lineDDA(400, 500, 0, 0);
     lineDDA(500, 400, 0,0);
     getch();
     closegraph();
     return 0;
 }
+
+void paintwhite(){
+//     for(int i = 0; i<800; i++){
+//         for(int j = 0; j<600; j++){
+//             putpixel(i, j, WHITE);
+//         }
+//     }
+//     // for(int i = 0; i<800; i++){
+//     //     line(i, 0, 600, i);
+//     // }
+// }
