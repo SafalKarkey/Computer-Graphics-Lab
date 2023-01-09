@@ -3,7 +3,9 @@
 ## **To setup graphics.h:**
 
 From bgi_files folder,
+
 ->Copy .a file to lib folder of compiler
+
 ->Copy .h file to include folder of compiler
 
 ## **To compile:**
@@ -20,4 +22,7 @@ By linking the following libraries while compiling:
 ```
 
 OR, by editing the bat file:
-rename the .cpp filename in run.bat to the file to be compiled and execute the bat file from terminal.
+
+Rename the .cpp filename in build.bat to the file to be compiled and execute the bat file from terminal or run run.bat
+
+Clean the bin folder using clean.bat
