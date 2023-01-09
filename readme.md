@@ -10,6 +10,14 @@ From bgi_files folder,
 
 ## **To compile:**
 
+Use the following command:
+
+```
+build filename.cpp
+```
+
+OR,
+
 By linking the following libraries while compiling:
 
 ```
@@ -20,9 +28,5 @@ By linking the following libraries while compiling:
 -loleaut32
 -lole32
 ```
-
-OR, by editing the bat file:
-
-Rename the .cpp filename in build.bat to the file to be compiled and execute the bat file from terminal or run run.bat
 
 Clean the bin folder using clean.bat
